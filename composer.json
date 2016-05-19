@@ -1,0 +1,30 @@
+{
+    "name": "ashleydawson/class-meta-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony bundle to add arbitrary metadata to classes and their constants by annotation",
+    "license": "MIT",
+    "keywords": [
+        "meta",
+        "metadata",
+        "class",
+        "constant",
+        "annotation"
+    ],
+    "authors": [
+        {
+            "name": "Ashley Dawson",
+            "email": "ashley@ashleydawson.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "symfony/symfony": "^2.3|^3.0",
+        "ashleydawson/class-meta": "^1.0"
+    },
+    "autoload": {
+        "psr-4": { "AshleyDawson\\ClassMetaBundle\\": "src" }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
