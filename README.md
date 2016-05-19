@@ -37,8 +37,11 @@ services:
         arguments: [ "%kernel.cache_dir%/ashleydawson/class_meta" ]
 
 ashley_dawson_class_meta:
-    cache_provider_service_id: my_class_meta_cache_provider
+    cache_provider_service_id: my_class_meta_cache_provider # Cache provider service ID (optional)
+    cache_provider_ttl: 300 # 5 minutes TTL (optional)
 ```
+
+*Note:* The cache is invalidated by file modify time, but if you want to also add a TTL to the cache it can be done via the `cache_provider_ttl` parameter.
 
 *Note:* To disable the cache, simply pass the id of a `Doctrine\Common\Cache\VoidCache` service.
 
