@@ -7,7 +7,7 @@
         <parameter key="ashleydawson.class_meta.class_meta_manager.class">AshleyDawson\ClassMeta\ClassMetaManager</parameter>
     </parameters>
     <services>
-        <service id="ashleydawson.class_meta.cache" class="Doctrine\Common\Cache\FilesystemCache" />
+        <service id="ashleydawson.class_meta.cache" class="Doctrine\Common\Cache\ArrayCache" />
         <service id="ashleydawson.class_meta" class="%ashleydawson.class_meta.class_meta_manager.class%">
             <call method="setCache">
                 <argument type="service" id="ashleydawson.class_meta.cache" />
