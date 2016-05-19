@@ -25,6 +25,7 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->scalarNode('cache_provider_service_id')->defaultValue(null)->end()
+                ->integerNode('cache_provider_ttl')->defaultValue(300)->end()
             ->end();
 
         return $treeBuilder;

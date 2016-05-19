@@ -11,6 +11,7 @@
         <service id="ashleydawson.class_meta" class="%ashleydawson.class_meta.class_meta_manager.class%">
             <call method="setCache">
                 <argument type="service" id="ashleydawson.class_meta.cache" />
+                <argument>%ashleydawson.class_meta.cache_provider_ttl%</argument>
             </call>
             <call method="setAnnotationReader">
                 <argument type="service" id="annotation_reader" />

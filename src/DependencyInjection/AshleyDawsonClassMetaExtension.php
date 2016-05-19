@@ -30,5 +30,6 @@ class AshleyDawsonClassMetaExtension extends Extension
         $loader->load('services.xml');
 
         $container->setParameter('ashleydawson.class_meta.cache_provider_service_id', $config['cache_provider_service_id']);
+        $container->setParameter('ashleydawson.class_meta.cache_provider_ttl', $config['cache_provider_ttl']);
     }
 }
