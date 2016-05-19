@@ -40,6 +40,8 @@ ashley_dawson_class_meta:
     cache_provider_service_id: my_class_meta_cache_provider
 ```
 
+*Note:* To disable the cache, simply pass the id of a `Doctrine\Common\Cache\VoidCache` service.
+
 Basic Usage
 -----------
 
