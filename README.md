@@ -25,8 +25,8 @@ $bundles = [
 Configuration
 -------------
 
-Configuration allows you to configure a cache provider. By default the cache provider is ArrayCache - so in 
-production, I'd advise you change this to a a more persistent cache strategy:
+Configuration allows you to set a cache provider. By default the cache provider is ArrayCache - so in 
+production, I'd advise you change this to a more persistent cache strategy:
 
 ```yaml
 # app/config/config.yml
