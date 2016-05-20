@@ -41,7 +41,7 @@ ashley_dawson_class_meta:
     cache_provider_ttl: 300 # 5 minutes TTL (optional)
 ```
 
-*Note:* The cache is invalidated by file modify time, but if you want to also add a TTL to the cache it can be done via the `cache_provider_ttl` parameter.
+*Note:* The cache is invalidated by file modify time, but if you want to also add a TTL (Time-to-live) to the cache it can be done via the `cache_provider_ttl` parameter.
 
 *Note:* To disable the cache, simply pass the id of a `Doctrine\Common\Cache\VoidCache` service.
 
