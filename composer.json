@@ -18,7 +18,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "symfony/framework-bundle": "^3.4.29|^4.0",
+        "symfony/framework-bundle": "^3.0|^4.0",
         "ashleydawson/class-meta": "^2.0"
     },
     "autoload": {
